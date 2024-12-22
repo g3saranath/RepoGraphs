@@ -1,0 +1,8 @@
+git clone --recurse-submodules -j8 https://github.com/FalkorDB/FalkorDB.git
+apt-get install build-essential cmake m4 automake peg libtool autoconf python3 python3-pip
+pip install -r FalkorDB/tests/requirements.txt
+# custom selection of integrations to work with core
+pip install llama-index-core
+pip install llama-index-llms-openai
+pip install llama-index-llms-replicate
+pip install llama-index-embeddings-huggingface
